@@ -1,0 +1,38 @@
+<ion-view view-title="Statment">
+ <ion-nav-buttons side="right" ng-show="false">
+        <button class="icon ion-trash-a btn" ng-click="DelFunc()">
+        </button>
+      </ion-nav-buttons>
+  <ion-content class="bodyColor">    
+    <div class="card" ng-repeat="i in Statments track by $index">
+        <div class="item"><b>Amount: </b>{{i.amount}}<br><b>Description: </b>{{i.description}}</div>                
+    </div>
+      <div><h4><b><center>Your Total Amount is: {{sum}}</center></b></h4></div>
+     
+  </ion-content>
+</ion-view>
+ 
+
+<!-- 
+<ion-view view-title="Statment">
+  <ion-content ng-init = "statments =  [
+        {
+            amount: 0,
+            description: 'Here it all begains',
+        },
+        {
+                          amount: 100,
+                          description: 'Second Entry',
+        },
+        {
+                        amount: 150,
+                        description: 'third entry',
+        }]">
+    
+    <div class="list" ng-repeat="i in statments">
+                <div class="item">{{i.amount}}<br>{{i.description}}</div>
+      </div>
+     
+  </ion-content>
+</ion-view>
+ -->

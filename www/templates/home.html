@@ -1,0 +1,21 @@
+<ion-view view-title="ExpencCalC">
+  <ion-content class="bodyColor">
+    <div class="list">
+   <div class="item item-input-inset bodyColor">
+      <label class="item item-input-wrapper">		
+      <input type="number" placeholder="Amount" ng-model="amt">
+      </label>
+      <button class="button button-stable" ng-click="myFunc(amt,desc)">Add</button>
+   </div>
+
+   <div class="item item-input-inset bodyColor">
+      <label class="item item-input-wrapper">
+      <i class="icon ion-edit placeholder-icon"></i>
+      <input type="text" placeholder="Description" ng-model="desc">
+      </label>
+   </div>
+</div>
+     
+    </ion-list>
+  </ion-content>
+</ion-view>
